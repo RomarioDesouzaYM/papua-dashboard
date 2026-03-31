@@ -1,0 +1,63 @@
+{
+  "indicator": "nightlights",
+  "scope": "Provinsi Papua - 9 kabupaten/kota",
+  "updated": "2026-03-31",
+  "unit": "mean radiance (normalized 0\u2013100)",
+  "source": "NOAA/VIIRS via GEE",
+  "data": [
+    {
+      "kab_name": "Biak Numfor",
+      "ADM1_EN": "Papua",
+      "raw": 0.39,
+      "normalized": 20.99
+    },
+    {
+      "kab_name": "Jayapura",
+      "ADM1_EN": "Papua",
+      "raw": 0.245,
+      "normalized": 3.09
+    },
+    {
+      "kab_name": "Keerom",
+      "ADM1_EN": "Papua",
+      "raw": 0.243,
+      "normalized": 2.85
+    },
+    {
+      "kab_name": "Kepulauan Yapen",
+      "ADM1_EN": "Papua",
+      "raw": 0.237,
+      "normalized": 2.11
+    },
+    {
+      "kab_name": "Kota Jayapura",
+      "ADM1_EN": "Papua",
+      "raw": 1.029,
+      "normalized": 100.0
+    },
+    {
+      "kab_name": "Mamberamo Raya",
+      "ADM1_EN": "Papua",
+      "raw": 0.22,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Sarmi",
+      "ADM1_EN": "Papua",
+      "raw": 0.238,
+      "normalized": 2.17
+    },
+    {
+      "kab_name": "Supiori",
+      "ADM1_EN": "Papua",
+      "raw": 0.259,
+      "normalized": 4.85
+    },
+    {
+      "kab_name": "Waropen",
+      "ADM1_EN": "Papua",
+      "raw": 0.224,
+      "normalized": 0.51
+    }
+  ]
+}
