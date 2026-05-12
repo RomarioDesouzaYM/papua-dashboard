@@ -1,31 +1,29 @@
 import os
+import ee
+
+# ── Earth Engine ──────────────────────────────────
+GEE_PROJECT = "papua-dashboard-491902"
+
+def init_ee():
+    ee.Initialize(project=GEE_PROJECT)
 
 # ── Scope ─────────────────────────────────────────
 YEAR = "2023"
-PROVINCE = "Papua"
 
-# EXACT names from shapefile — do not change
-KABUPATEN = [
-    "Biak Numfor",
-    "Jayapura",
-    "Keerom",
-    "Kepulauan Yapen",
-    "Kota Jayapura",
-    "Mamberamo Raya",
-    "Sarmi",
-    "Supiori",
-    "Waropen",
+# Boundary file uses 2020 province names
+PROVINCES = ["Papua", "Papua Barat"]
+
+# Bounding box for full Papua + Papua Barat region
+PAPUA_BBOX = [-9, 130, 0, 141]
+
+# Multi-city accessibility anchors
+CITY_CENTERS = [
+    {"name": "Jayapura", "lon": 140.7167, "lat": -2.5333},
+    {"name": "Timika", "lon": 136.8872, "lat": -4.5272},
+    {"name": "Merauke", "lon": 140.3667, "lat": -8.4667},
+    {"name": "Sorong", "lon": 131.2500, "lat": -0.8833},
+    {"name": "Wamena", "lon": 138.9500, "lat": -4.0833},
 ]
-
-# Bounding box (Papua region)
-PAPUA_BBOX = [-5.0, 132.0, -0.5, 141.5]
-
-# Accessibility anchor (MVP simplification)
-CITY_CENTER = {
-    "name": "Jayapura",
-    "lon": 140.7167,
-    "lat": -2.5333,
-}
 
 # ── Paths ─────────────────────────────────────────
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -52,8 +50,8 @@ INDICATORS = {
         "source": "OSM via OSMnx",
     },
     "accessibility": {
-        "label": "Travel time to Jayapura",
-        "unit": "minutes (inverted, normalized 0–100)",
+        "label": "Accessibility to nearest major city",
+        "unit": "minutes travel time (inverted, normalized 0–100)",
         "source": "Oxford friction surface via GEE",
     },
     "social": {
@@ -65,5 +63,5 @@ INDICATORS = {
         "label": "Forest loss since 2000",
         "unit": "% loss (raw)",
         "source": "Hansen GFC via GEE",
-    }
+    },
 }
