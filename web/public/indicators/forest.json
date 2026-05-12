@@ -1,0 +1,261 @@
+{
+  "indicator": "forest",
+  "scope": "Papua and Papua Barat - 42 kabupaten/kota",
+  "updated": "2026-05-12",
+  "unit": "% loss (raw)",
+  "source": "Hansen GFC via GEE",
+  "data": [
+    {
+      "kab_name": "Asmat",
+      "ADM1_EN": "Papua",
+      "raw": 0.01,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Biak Numfor",
+      "ADM1_EN": "Papua",
+      "raw": 0.09,
+      "normalized": 42.11
+    },
+    {
+      "kab_name": "Boven Digoel",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Deiyai",
+      "ADM1_EN": "Papua",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Dogiyai",
+      "ADM1_EN": "Papua",
+      "raw": 0.01,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Fakfak",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.05,
+      "normalized": 21.05
+    },
+    {
+      "kab_name": "Intan Jaya",
+      "ADM1_EN": "Papua",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Jayapura",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Jayawijaya",
+      "ADM1_EN": "Papua",
+      "raw": 0.06,
+      "normalized": 26.32
+    },
+    {
+      "kab_name": "Kaimana",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Keerom",
+      "ADM1_EN": "Papua",
+      "raw": 0.05,
+      "normalized": 21.05
+    },
+    {
+      "kab_name": "Kepulauan Yapen",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Kota Jayapura",
+      "ADM1_EN": "Papua",
+      "raw": 0.14,
+      "normalized": 68.42
+    },
+    {
+      "kab_name": "Kota Sorong",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.1,
+      "normalized": 47.37
+    },
+    {
+      "kab_name": "Lanny Jaya",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Mamberamo Raya",
+      "ADM1_EN": "Papua",
+      "raw": 0.01,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Mamberamo Tengah",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Manokwari",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.2,
+      "normalized": 100.0
+    },
+    {
+      "kab_name": "Manokwari Selatan",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.05,
+      "normalized": 21.05
+    },
+    {
+      "kab_name": "Mappi",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Maybrat",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.04,
+      "normalized": 15.79
+    },
+    {
+      "kab_name": "Merauke",
+      "ADM1_EN": "Papua",
+      "raw": 0.06,
+      "normalized": 26.32
+    },
+    {
+      "kab_name": "Mimika",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Nabire",
+      "ADM1_EN": "Papua",
+      "raw": 0.05,
+      "normalized": 21.05
+    },
+    {
+      "kab_name": "Nduga",
+      "ADM1_EN": "Papua",
+      "raw": 0.01,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Paniai",
+      "ADM1_EN": "Papua",
+      "raw": 0.01,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Pegunungan Arfak",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Pegunungan Bintang",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Puncak",
+      "ADM1_EN": "Papua",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Puncak Jaya",
+      "ADM1_EN": "Papua",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Raja Ampat",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Sarmi",
+      "ADM1_EN": "Papua",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Sorong",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.07,
+      "normalized": 31.58
+    },
+    {
+      "kab_name": "Sorong Selatan",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.06,
+      "normalized": 26.32
+    },
+    {
+      "kab_name": "Supiori",
+      "ADM1_EN": "Papua",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Tambrauw",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Teluk Bintuni",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Teluk Wondama",
+      "ADM1_EN": "Papua Barat",
+      "raw": 0.02,
+      "normalized": 5.26
+    },
+    {
+      "kab_name": "Tolikara",
+      "ADM1_EN": "Papua",
+      "raw": 0.04,
+      "normalized": 15.79
+    },
+    {
+      "kab_name": "Waropen",
+      "ADM1_EN": "Papua",
+      "raw": 0.01,
+      "normalized": 0.0
+    },
+    {
+      "kab_name": "Yahukimo",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    },
+    {
+      "kab_name": "Yalimo",
+      "ADM1_EN": "Papua",
+      "raw": 0.03,
+      "normalized": 10.53
+    }
+  ]
+}
