@@ -34,7 +34,7 @@ BOUNDARY = os.path.join(ROOT, "web", "public", "kabupaten.geojson")
 
 # ── GEE datasets ──────────────────────────────────
 GEE_VIIRS = "NOAA/VIIRS/DNB/MONTHLY_V1/VCMSLCFG"
-GEE_FRICTION = "Oxford/MAP/friction_surface_2019"
+GEE_FRICTION = "projects/malariaatlasproject/assets/accessibility/friction_surface/2019_v5_1"
 GEE_HANSEN = "UMD/hansen/global_forest_change_2023_v1_11"
 
 # ── Indicator metadata ────────────────────────────
