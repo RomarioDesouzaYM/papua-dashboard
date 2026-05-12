@@ -1,34 +1,37 @@
-import ee, sys, os
-sys.path.insert(0, os.path.dirname(__file__))
+import ee
+import pandas as pd
+import os
 
-from config import GEE_VIIRS, YEAR
-from utils import boundary_to_ee_features
+from pipeline.config import init_ee, GEE_VIIRS, YEAR, RAW_DIR
+from pipeline.utils import load_boundary, kab_to_ee_features, save_indicator
 
-# Initialize Earth Engine with your project
-ee.Initialize(project="papua-dashboard-491902")
+init_ee()
 
-# Convert boundaries to EE
-kab_ee = boundary_to_ee_features()
+# Load boundary and convert to GEE features
+kab = load_boundary()
+kab_ee = kab_to_ee_features(kab)
 
-# Load VIIRS nighttime lights
-viirs = (ee.ImageCollection(GEE_VIIRS)
-           .filterDate(f"{YEAR}-01-01", f"{YEAR}-12-31")
-           .select("avg_rad")
-           .mean())
+# VIIRS annual mean for YEAR
+viirs = (
+    ee.ImageCollection(GEE_VIIRS)
+    .filterDate(f"{YEAR}-01-01", f"{YEAR}-12-31")
+    .select("avg_rad")
+    .mean()
+)
 
-# Compute mean radiance per kabupaten
+# Zonal stats (mean radiance per kabupaten)
 stats = viirs.reduceRegions(
     collection=kab_ee,
     reducer=ee.Reducer.mean(),
     scale=500
 )
 
-# Export to Google Drive
+# Export to Google Drive as CSV
 task = ee.batch.Export.table.toDrive(
     collection=stats,
-    description=f"ntl_papua9_{YEAR}",
+    description=f"ntl_papua_{YEAR}",
     fileFormat="CSV"
 )
 
 task.start()
-print("NTL export started. Check Earth Engine Tasks tab.")
+print("NTL export started → check https://code.earthengine.google.com Tasks tab")
