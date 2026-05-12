@@ -6,10 +6,7 @@ gdf = gpd.read_file("data/raw/idn_admbnda_adm2_bps_20200401.shp")
 # Filter Papua provinces
 SCOPE = [
     "Papua",
-    "Papua Selatan",
-    "Papua Tengah",
-    "Papua Pegunungan",
-    "Papua Barat Daya"
+    "Papua Barat"
 ]
 
 papua = gdf[gdf["ADM1_EN"].isin(SCOPE)].copy()
